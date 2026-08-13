@@ -1,12 +1,11 @@
- Sistema de Prospección Automatizada
-
-## Descripción General
-Este proyecto es un script automatizado en **Python** diseñado para la prospección comercial e institucional (*Cold Emailing*). Su objetivo principal es buscar negocios locales en la web, extraer correos electrónicos, validar su entrega mediante consultas DNS y enviar de forma automática propuestas de servicios estructuradas en HTML.
-
+ Sistema de Prospección 
 @author Daniel Jose Coste Santos
 @version 1.0.0
 @date 2026
+ 
 
+## Descripción General
+Este proyecto es un script automatizado en **Python** diseñado para la prospección comercial e institucional (*Cold Emailing*). Su objetivo principal es buscar negocios locales en la web, extraer correos electrónicos, validar su entrega mediante consultas DNS y enviar de forma automática propuestas de servicios estructuradas en HTML.
 ---
 
 ## Dependencias y Requisitos
