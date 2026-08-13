@@ -1,4 +1,4 @@
- Sistema de Prospección 
+ Sistema de Automatizador Correos 
  
 @author Daniel Jose Coste Santos
 @version 1.0.0
