@@ -1,0 +1,12 @@
+2026-08-03 19:55:05,352 [ERROR] Falta la GOOGLE_MAPS_API_KEY en el archivo .env.
+2026-08-03 19:55:05,353 [WARNING] No se obtuvieron negocios con sitios web desde Google Maps.
+2026-08-04 18:01:04,661 [INFO] Se cargaron 1 empresas desde la lista local.
+2026-08-04 18:01:04,662 [INFO] Estableciendo conexión con el servidor de correo...
+2026-08-04 18:01:06,549 [INFO] Conexión SMTP exitosa.
+2026-08-04 18:01:06,550 [INFO] Analizando sitio web de: Empresa Ejemplo 1 (https://example.com)
+2026-08-04 18:01:06,759 [INFO] [Omitido] No se encontró un correo público en la web de Empresa Ejemplo 1.
+2026-08-04 18:01:06,804 [INFO] ==========================================
+2026-08-04 18:01:06,804 [INFO]     PROSPECCIÓN LOCAL AUTOMÁTICA FIN      
+2026-08-04 18:01:06,804 [INFO] ==========================================
+2026-08-04 18:01:06,805 [INFO] Total de correos reales enviados: 0
+2026-08-04 18:01:06,805 [INFO] Fallidos: 0
