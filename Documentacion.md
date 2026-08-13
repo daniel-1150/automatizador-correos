@@ -1,4 +1,4 @@
- Sistema de Prospección Automatizada {#mainpage}
+ Sistema de Prospección Automatizada
 
 ## Descripción General
 Este proyecto es un script automatizado en **Python** diseñado para la prospección comercial e institucional (*Cold Emailing*). Su objetivo principal es buscar negocios locales en la web, extraer correos electrónicos, validar su entrega mediante consultas DNS y enviar de forma automática propuestas de servicios estructuradas en HTML.
@@ -160,7 +160,7 @@ def extraer_correo(url):
     return None
 ```
 
-**mmg línea por línea:**
+**Desglose línea por línea:**
 
 <ul>
 <li>
