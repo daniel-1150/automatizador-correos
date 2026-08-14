@@ -1,11 +1,3 @@
-"""
-file lanzar_campana.py
-brief Script principal para la automatización de búsqueda y prospección por correo electrónico.
-details Este script utiliza DuckDuckGo para buscar empresas locales, extrae sus correos y envía propuestas personalizadas mediante SMTP.
-author Daniel Jose Coste Santos
-date 2026
-"""
-
 import logging
 import requests
 import os
@@ -34,12 +26,7 @@ ENLACE_CV_ONLINE = "https://drive.google.com/file/d/1gPaPYxijwrLuZmOZLsG0_oPwUkv
 
 
 def buscar_empresas_duckduckgo(query, limite=10):
-    """!
-    Realiza una búsqueda web para encontrar empresas.
-    query (str) El término de búsqueda que se enviará al motor.
-    limite (int) Número máximo de resultados a extraer.
-    list Una lista de diccionarios que contienen el 'nombre' y la 'web' de cada empresa.
-    """
+    
     logging.info(f"Buscando en DuckDuckGo: '{query}'...")
     empresas = []
     try:
@@ -55,12 +42,7 @@ def buscar_empresas_duckduckgo(query, limite=10):
 
 
 def extraer_correo(url):
-    """!
-     Analiza el HTML de una página web para extraer y validar correos electrónicos.
-    Utiliza expresiones regulares para atrapar correos, los pasa por una lista de exclusión (typos) y finalmente realiza una validación de registros MX DNS.
-    url (str) La dirección web de la empresa a analizar.
-    str|None Devuelve el correo en texto plano si es válido y real, o None si no encuentra nada útil.
-    """
+    
     try:
         headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
         res = requests.get(url, headers=headers, timeout=10)
@@ -99,10 +81,7 @@ def extraer_correo(url):
 
 
 def enviar_propuesta():
-    """!
-    Función principal que orquesta la ejecución del script.
-    Se encarga de llamar al motor de búsqueda, iterar sobre los negocios, conectar al servidor SMTP mediante TLS y enviar los mensajes HTML personalizados.
-    """
+    
     if not SENDER_EMAIL or not SENDER_PASSWORD:
         logging.error("Falta configurar el .env")
         return
